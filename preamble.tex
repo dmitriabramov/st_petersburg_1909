@@ -1,11 +1,24 @@
+%Geometry for fine tuning the margins
+%TODO: When everything is finished, make an a4 version
 \usepackage[a5paper,text={12cm,16cm},centering]{geometry}
+
+%Titlesec for titles
 \usepackage[compact,small]{titlesec}
-%\usepackage{kpfonts}
-%\usepackage[T1]{fontenc}
-\usepackage{graphicx,hyperref,amsmath,natbib,bm,url}
+
+%Graphics
+\usepackage{graphicx}
+
+%Babel
 \usepackage[american]{babel}
+
+%Improved typesetting
+%TODO: Add some more options to it from older files
 \usepackage{microtype}
-\usepackage{titlesec}
+
+%XSkak for chess related things
+%skak is throwing some variations related errors which were fixed by using xskak
 \usepackage{xskak}
+
+%Removes annoying LaTeX default "Chapter 1 - [name]" from the titles
 \titleformat{\chapter}[display]
   {\centering\normalfont\bfseries}{}{-100pt}{\Large}
