@@ -24,6 +24,26 @@
 %skak is throwing some variations related errors which were fixed by using xskak
 \usepackage{xskak}
 
+%https://tex.stackexchange.com/questions/139380/turn-move-number-off-in-variation
+%Allows printing just a move without move number
+%\variationNM{move}
+\makeatletter
+\newcommand{\variationNM}[1][]{%
+ \setkeys[UFXS]{print}{#1}%
+ \begingroup\catcode`\#=12 \@variationNM}
+\def\@variationNM#1{\endgroup
+  \gdef\NumberNext{\False}%
+  \gdef\AfterBlack{\False}%
+  \gdef\PrintMoves{\False}%
+  \gdef\ExecuteMoves{\False}%
+  \gdef\StoreLastMove{\False}%
+  {\variationstyle\opencommands%
+   \variationmovemode
+   \Mainline(#1 Z )%
+   \closecommands}}
+\makeatother
+
+
 %Removes annoying LaTeX default "Chapter 1 - [name]" from the titles
 \titleformat{\chapter}[display]
   {\centering\normalfont\bfseries}{}{-100pt}{\Large}
