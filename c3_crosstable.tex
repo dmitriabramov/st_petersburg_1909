@@ -1,4 +1,34 @@
-%TODO: Add the crosstable, I'm too lazy atm to mess around with LaTeX tables
+%TODO: Add some sort of markings that more precisely show which players are under "Prizes divided". The book has some sort of thin curly braces, but I'm not sure how to properly implement them without adding yet another column just for that
 
+\newpage
+\begin{sidewaystable}[]
 \chapter{Tournament Crosstable}
-TODO
+\thispagestyle{empty}
+\small
+\centering
+\hspace{-1cm}
+\tabcolsep=0.1cm
+\begin{tabular}{@{}lccccccccccccccccccccl@{}}
+\toprule
+Names of the players & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & Totals & Prizes                                                                                     \\ \midrule
+Dr. Lasker           &   & 0 & 1 & \nicefrac{1}{2} & \nicefrac{1}{2} & 1 & 1 & 1 & 1 & \nicefrac{1}{2}  & 1  & 1  & 0  & 1  & 1  & 1  & 1  & 1  & 1  & 14\nicefrac{1}{2}    & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}I.~\& II.\\ Prizes divided\end{tabular}}   \\
+Rubinstein           & 1 &   & 1 & 1 & \nicefrac{1}{2} & \nicefrac{1}{2} & \nicefrac{1}{2} & 1 & 1 & 1  & 1  & \nicefrac{1}{2}  & 0  & 1  & \nicefrac{1}{2}  & 1  & 1  & 1  & 1  & 14\nicefrac{1}{2}    &                                                                                            \\
+Duras                & 0 & 0 &   & 0 & 0 & 1 & \nicefrac{1}{2} & 0 & 1 & \nicefrac{1}{2}  & 1  & 0  & 1  & 1  & 1  & 1  & 1  & 1  & 1  & 11     & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}III.~\& IV.\\ Prizes divided\end{tabular}} \\
+Spielmann            & \nicefrac{1}{2} & 0 & 1 &   & 0 & 1 & 1 & \nicefrac{1}{2} & \nicefrac{1}{2} & 1  & \nicefrac{1}{2}  & \nicefrac{1}{2}  & 1  & 0  & \nicefrac{1}{2}  & 1  & \nicefrac{1}{2}  & \nicefrac{1}{2}  & 1  & 11     &                                                                                            \\
+Dr. Bernstein        & \nicefrac{1}{2} & \nicefrac{1}{2} & 1 & 1 &   & 0 & 1 & 0 & 1 & 1  & 1  & 1  & \nicefrac{1}{2}  & 0  & 0  & 0  & \nicefrac{1}{2}  & \nicefrac{1}{2}  & 1  & 10\nicefrac{1}{2}    & V.~Prize                                                                              \\
+Teichmann            & 0 & \nicefrac{1}{2} & 0 & 0 & 1 &   & 0 & \nicefrac{1}{2} & \nicefrac{1}{2} & \nicefrac{1}{2}  & 1  & \nicefrac{1}{2}  & 1  & \nicefrac{1}{2}  & 1  & \nicefrac{1}{2}  & 1  & 1  & \nicefrac{1}{2}  & 10     & VI.~Prize                                                                             \\
+Dr. Perlis           & 0 & \nicefrac{1}{2} & \nicefrac{1}{2} & 0 & 0 & 1 &   & \nicefrac{1}{2} & 1 & \nicefrac{1}{2}  & 1  & \nicefrac{1}{2}  & 1  & \nicefrac{1}{2}  & 1  & \nicefrac{1}{2}  & 0  & 0  & 1  & 9\nicefrac{1}{2}     & VII.~Prize                                                                            \\
+E. Cohn              & 0 & 0 & 1 & \nicefrac{1}{2} & 1 & \nicefrac{1}{2} & \nicefrac{1}{2} &   & 0 & 0  & \nicefrac{1}{2}  & 1  & \nicefrac{1}{2}  & 1  & 0  & \nicefrac{1}{2}  & \nicefrac{1}{2}  & 1  & 1  & 9      & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}VIII, IX, \& X.\\ Prizes divided\end{tabular}}  \\
+Salwe                & 0 & 0 & 0 & \nicefrac{1}{2} & 0 & \nicefrac{1}{2} & 0 & 1 &   & 0  & 1  & \nicefrac{1}{2}  & 1  & 1  & \nicefrac{1}{2}  & 0  & 1  & 1  & 1  & 9      &                                                                                            \\
+Schlecter            & \nicefrac{1}{2} & 0 & \nicefrac{1}{2} & 0 & 0 & \nicefrac{1}{2} & \nicefrac{1}{2} & 1 & 1 &    & 0  & 0  & 1  & 1  & \nicefrac{1}{2}  & 0  & 1  & \nicefrac{1}{2}  & 1  & 9      &                                                                                            \\
+Mieses               & 0 & 0 & 0 & \nicefrac{1}{2} & 0 & 0 & 0 & \nicefrac{1}{2} & 0 & 1  &    & 1  & \nicefrac{1}{2}  & 1  & 1  & 1  & 0  & 1  & 1  & 8\nicefrac{1}{2}     &                                                                                            \\
+Tartakower           & 0 & \nicefrac{1}{2} & 1 & \nicefrac{1}{2} & 0 & \nicefrac{1}{2} & \nicefrac{1}{2} & 0 & \nicefrac{1}{2} & 1  & 0  &    & 0  & 0  & \nicefrac{1}{2}  & 1  & 1  & 1  & \nicefrac{1}{2}  & 8\nicefrac{1}{2}     &                                                                                            \\
+Dus-Chotimirski      & 1 & 1 & 0 & 0 & \nicefrac{1}{2} & 0 & 0 & \nicefrac{1}{2} & 0 & 0  & \nicefrac{1}{2}  & 1  &    & \nicefrac{1}{2}  & \nicefrac{1}{2}  & \nicefrac{1}{2}  & 1  & 0  & 1  & 8      & Special Prize                                                                              \\
+Forgács              & 0 & 0 & 0 & 1 & 1 & \nicefrac{1}{2} & \nicefrac{1}{2} & 1 & 0 & 0  & 0  & 1  & \nicefrac{1}{2}  &    & \nicefrac{1}{2}  & \nicefrac{1}{2}  & \nicefrac{1}{2}  & 0  & \nicefrac{1}{2}  & 7\nicefrac{1}{2}     &                                                                                            \\
+Burn                 & 0 & \nicefrac{1}{2} & 0 & \nicefrac{1}{2} & 1 & 0 & 0 & \nicefrac{1}{2} & \nicefrac{1}{2} & \nicefrac{1}{2}  & 0  & \nicefrac{1}{2}  & \nicefrac{1}{2}  & \nicefrac{1}{2}  &    & 1  & \nicefrac{1}{2}  & \nicefrac{1}{2}  & 0  & 7      &                                                                                            \\
+Vidmar               & 0 & 0 & 0 & 0 & 1 & \nicefrac{1}{2} & \nicefrac{1}{2} & \nicefrac{1}{2} & 1 & 1  & 0  & 0  & \nicefrac{1}{2}  & \nicefrac{1}{2}  & 0  &    & \nicefrac{1}{2}  & 1  & 0  & 7      &                                                                                            \\
+Speijer              & 0 & 0 & 0 & \nicefrac{1}{2} & \nicefrac{1}{2} & 0 & 1 & \nicefrac{1}{2} & 0 & 0  & 1  & 0  & 0  & \nicefrac{1}{2}  & \nicefrac{1}{2}  & \nicefrac{1}{2}  &    & \nicefrac{1}{2}  & \nicefrac{1}{2}  & 6      &                                                                                            \\
+von Freymann         & 0 & 0 & 0 & \nicefrac{1}{2} & \nicefrac{1}{2} & 0 & 1 & 0 & 0 & \nicefrac{1}{2}  & 0  & 0  & 1  & 1  & \nicefrac{1}{2}  & 0  & \nicefrac{1}{2}  &    & 0  & 5\nicefrac{1}{2}     &                                                                                            \\
+Znosko-Borovsky      & 0 & 0 & 0 & 0 & 0 & \nicefrac{1}{2} & 0 & 0 & 0 & 0  & 0  & \nicefrac{1}{2}  & 0  & \nicefrac{1}{2}  & 1  & 1  & \nicefrac{1}{2}  & 1  &    & 5      &                                                                                            \\ \bottomrule
+\end{tabular}
+\end{sidewaystable}
